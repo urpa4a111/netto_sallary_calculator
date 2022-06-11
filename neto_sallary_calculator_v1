@@ -1,0 +1,14 @@
+def netto_sallary(sallary):
+    return sallary - sallary * 0.224
+def deducations(bruto, neto):
+    return bruto - neto
+
+
+
+your_brutto_sallary = float(input("Въведете вашата брутна заплата: "))
+
+your_netto_sallary = netto_sallary(your_brutto_sallary)
+your_deducation = deducations(your_brutto_sallary, your_netto_sallary)
+
+print(f"От заплатата Ви ще бъдат удържани данъци в размер на {your_deducation:.2f} лв.")
+print(f"Вие ще получите чиста заплата след удръжките в размер на {your_netto_sallary: .2f} лв.")
